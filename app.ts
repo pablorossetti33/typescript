@@ -7,6 +7,8 @@ const c = a + b
 
 //functions
 
-function saludar (name) {
-    console.log(`Hola ${name}`)
+function saludar ({name , age}: {name: string, age: number}) {
+    console.log(`Hola ${name} tienes ${age} años`)
 }
+
+saludar({name: "Pepe", age: 25})
