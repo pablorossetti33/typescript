@@ -23,3 +23,9 @@ const sayHi = (name: string) => {
 }
 
 sayHiFromFunction(sayHi)
+
+
+// Never
+function throwError(message: string): never {
+   throw new Error(message);
+}
