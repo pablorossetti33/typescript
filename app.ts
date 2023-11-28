@@ -12,3 +12,14 @@ function saludar ({name , age}: {name: string, age: number}) {
 }
 
 saludar({name: "Pepe", age: 25})
+
+// functions type
+const sayHiFromFunction = (fn: (name: string) => void) => {
+   fn ("miguel")
+}
+
+const sayHi = (name: string) => {
+   console.log(`Hola ${name}`)
+}
+
+sayHiFromFunction(sayHi)
