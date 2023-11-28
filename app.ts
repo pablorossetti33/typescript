@@ -39,6 +39,7 @@ function throwError(message: string): never {
 //Type alias
 
 type Hero = {
+    id?: number,
     name: string,
     age: number
 }
@@ -54,3 +55,11 @@ type Hero = {
  }
 
  const thor = createHero("Thor", 1500)
+
+ //optional properties
+ type Hero2 = {
+    name: string,
+    age: number,
+    isActive? : boolean
+
+}
