@@ -29,3 +29,28 @@ sayHiFromFunction(sayHi)
 function throwError(message: string): never {
    throw new Error(message);
 }
+
+//Objetos
+// let hero = {
+//     name: "Thor",
+//     age: 1500
+// }
+
+//Type alias
+
+type Hero = {
+    name: string,
+    age: number
+}
+
+
+ let hero: Hero = {
+     name: "Thor",
+     age: 1500
+ }
+
+ function createHero(name: string, age: number) : Hero {
+       return {name, age}
+ }
+
+ const thor = createHero("Thor", 1500)
