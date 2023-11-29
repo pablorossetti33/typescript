@@ -68,3 +68,14 @@ function throwError(message: string): never {
 type HeroPowerScale = "local" | "planetary" | "galactic" | "universal" | "multiversal"
 
 
+//Arrays
+
+const languages: string[] = []
+
+languages.push("JavaScript")
+languages.push("CSS")
+languages.push("Python")
+languages.push("Java")
+
+
+
