@@ -38,28 +38,33 @@ function throwError(message: string): never {
 
 //Type alias
 
-type Hero = {
-    id?: number,
-    name: string,
-    age: number
-}
+// type Hero = {
+//     id?: number,
+//     name: string,
+//     age: number
+// }
 
 
- let hero: Hero = {
-     name: "Thor",
-     age: 1500
- }
+//  let hero: Hero = {
+//      name: "Thor",
+//      age: 1500
+//  }
 
- function createHero(name: string, age: number) : Hero {
-       return {name, age}
- }
+//  function createHero(name: string, age: number) : Hero {
+//        return {name, age}
+//  }
 
- const thor = createHero("Thor", 1500)
+//  const thor = createHero("Thor", 1500)
 
- //optional properties
- type Hero2 = {
-    name: string,
-    age: number,
-    isActive? : boolean
+//  //optional properties
+//  type Hero2 = {
+//     name: string,
+//     age: number,
+//     isActive? : boolean
 
-}
+// }
+//Union types
+
+type HeroPowerScale = "local" | "planetary" | "galactic" | "universal" | "multiversal"
+
+
